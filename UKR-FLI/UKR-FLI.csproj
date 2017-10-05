@@ -65,7 +65,29 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\Registeration.mdf" />
+    <Content Include="App_Data\Registeration_log.ldf">
+      <DependentUpon>Registeration.mdf</DependentUpon>
+    </Content>
+    <Content Include="booking.aspx" />
+    <Content Include="faq.aspx" />
+    <Content Include="images\background-01.jpg" />
+    <Content Include="login.aspx" />
     <Content Include="packages.config" />
+    <Content Include="fonts\1YwB1sO8YE1Lyjf12WNiUA.woff2" />
+    <Content Include="fonts\2HG_tEPiQ4Z6795cGfdivFtXRa8TVwTICgirnJhmVJw.woff2" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\H2DMvhDLycM56KNuAtbJYA.woff2" />
+    <Content Include="fonts\icomoon.woff" />
+    <Content Include="fonts\materialdesignicons-webfont.woff2" />
+    <Content Include="fonts\PTSans-Bold.woff2" />
+    <Content Include="fonts\PTSans-Regular.woff2" />
+    <Content Include="fonts\PTSansBold-ext.woff" />
+    <Content Include="fonts\PTSansRegular-ext.woff" />
+    <Content Include="fonts\tI4j516nok_GrVf4dhunkg.woff2" />
+    <Content Include="fonts\tm-icomoon.ttf" />
+    <None Include="Properties\PublishProfiles\UKR-FLI20171005010931 - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\ukraine-airlines - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -74,10 +96,132 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Web.config" />
+    <Content Include="cdn-cgi\apps\body\4o300efCt-CXoq1JEC-sVReFz48.js" />
+    <Content Include="cdn-cgi\apps\head\3ts2ksMwXvKRuG480KNifJ2_JNM.js" />
+    <Content Include="css\style.css" />
+    <Content Include="images\background-01-1920x900.jpg" />
+    <Content Include="images\background-02-1920x531.jpg" />
+    <Content Include="images\breadcrumbs-01-1920x553.jpg" />
+    <Content Include="images\favicon.ico" />
+    <Content Include="images\home-01-270x360.jpg" />
+    <Content Include="images\home-02-270x360.jpg" />
+    <Content Include="images\home-03-270x360.jpg" />
+    <Content Include="images\home-04-420x300.jpg" />
+    <Content Include="images\home-05-420x300.jpg" />
+    <Content Include="images\home-06-420x300.jpg" />
+    <Content Include="images\home-07-420x300.jpg" />
+    <Content Include="images\home-08-270x190.jpg" />
+    <Content Include="images\home-09-270x190.jpg" />
+    <Content Include="images\home-10-270x190.jpg" />
+    <Content Include="images\home-11-270x190.jpg" />
+    <Content Include="images\home-12-270x190.jpg" />
+    <Content Include="images\home-13-270x190.jpg" />
+    <Content Include="images\logo-01.jpg" />
+    <Content Include="images\logo-02.jpg" />
+    <Content Include="images\logo-03.jpg" />
+    <Content Include="images\logo-04.jpg" />
+    <Content Include="images\logo-05.jpg" />
+    <Content Include="images\logo-06.jpg" />
+    <Content Include="images\logo-07.jpg" />
+    <Content Include="images\logo-dark-233x55.png" />
+    <Content Include="images\overview-01.jpg" />
+    <Content Include="images\overview-02.jpg" />
+    <Content Include="images\photoswipe-controls %281%29.png" />
+    <Content Include="images\photoswipe-controls.png" />
+    <Content Include="images\post-01.jpg" />
+    <Content Include="images\post-02.jpg" />
+    <Content Include="images\post-03.jpg" />
+    <Content Include="images\tickets-01.jpg" />
+    <Content Include="images\tickets-02.jpg" />
+    <Content Include="images\user-01.jpg" />
+    <Content Include="images\user-02.jpg" />
+    <Content Include="images\user-03.jpg" />
+    <Content Include="images\_blank.png" />
+    <Content Include="js\core.min.js" />
+    <Content Include="js\script.js" />
+    <Content Include="overview.aspx" />
+    <Content Include="purchase.aspx" />
+    <Content Include="register.aspx" />
+    <Content Include="ticket-list.aspx" />
+    <Content Include="UserDetails.aspx" />
+    <Content Include="Users.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="index.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="booking.aspx.cs">
+      <DependentUpon>booking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="booking.aspx.designer.cs">
+      <DependentUpon>booking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="faq.aspx.cs">
+      <DependentUpon>faq.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="faq.aspx.designer.cs">
+      <DependentUpon>faq.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="overview.aspx.cs">
+      <DependentUpon>overview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="overview.aspx.designer.cs">
+      <DependentUpon>overview.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="purchase.aspx.cs">
+      <DependentUpon>purchase.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="purchase.aspx.designer.cs">
+      <DependentUpon>purchase.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="register.aspx.cs">
+      <DependentUpon>register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="register.aspx.designer.cs">
+      <DependentUpon>register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ticket-list.aspx.cs">
+      <DependentUpon>ticket-list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ticket-list.aspx.designer.cs">
+      <DependentUpon>ticket-list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserDetails.aspx.cs">
+      <DependentUpon>UserDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserDetails.aspx.designer.cs">
+      <DependentUpon>UserDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users.aspx.cs">
+      <DependentUpon>Users.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users.aspx.designer.cs">
+      <DependentUpon>Users.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -94,7 +238,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>3293</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:3293/</IISUrl>
+          <IISUrl>http://localhost:3272/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

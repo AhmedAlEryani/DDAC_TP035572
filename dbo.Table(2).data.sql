@@ -1,0 +1,2 @@
+﻿INSERT INTO [dbo].[Table] ([ID], [UserName], [Email], [Password], [Country]) VALUES (1, N'Admin               ', N'Dota-2@live.com                                   ', N'123                 ', N'Germany        ')
+INSERT INTO [dbo].[Table] ([ID], [UserName], [Email], [Password], [Country]) VALUES (2, N'asdsad              ', N'asdasd@wad.com                                    ', N'123                 ', N'USA            ')
